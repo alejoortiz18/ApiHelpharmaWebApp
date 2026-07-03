@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "WebApp Debug",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-webapp",
+      "program": "${workspaceFolder}/WebApp/bin/Debug/net10.0/WebApp.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/WebApp",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+        "uriFormat": "%s/swagger/index.html"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://localhost:5200"
+      }
+    },
+    {
+      "name": "Attach to WebApp",
+      "type": "coreclr",
+      "request": "attach"
+    }
+  ]
+}

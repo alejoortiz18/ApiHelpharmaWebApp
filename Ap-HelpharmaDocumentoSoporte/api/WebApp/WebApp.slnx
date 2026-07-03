@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/Business/">
+    <Project Path="Business/Business/Business.csproj" Id="58e0ebdf-88fd-42c1-acb8-149481680998" />
+  </Folder>
+  <Folder Name="/Data/">
+    <Project Path="Data/Data/Data.csproj" Id="bf7b7ae5-ab4b-49c3-91a0-13de5ec4c0fd" />
+  </Folder>
+  <Folder Name="/Models/">
+    <Project Path="Models/Models/Models.csproj" Id="0df01fa0-ca8f-440e-a844-53bacc6df0cd" />
+  </Folder>
+  <Project Path="WebApp/WebApp.csproj" />
+</Solution>
